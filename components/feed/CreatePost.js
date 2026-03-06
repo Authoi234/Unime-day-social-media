@@ -6,7 +6,7 @@ import { Aperture, Video, X } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { createNewPost } from "@/lib/WorkWithPosts";
 
-export default function CreatePost() {
+export default function CreatePost({setPostAdded}) {
   const prompts = [
     "Whats on your mind?",
     "A cosa stai pensando?",
@@ -87,6 +87,7 @@ export default function CreatePost() {
 
       const result = await createNewPost(payload);
       console.log("✅ Post created:", result);
+      setPostAdded(result);
 
       reset();
       setMediaFiles([]);

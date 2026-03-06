@@ -5,6 +5,7 @@ import { Heart, MessageCircle, Share2 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
+
 export default function PostCard({ post }) {
   const [liked, setLiked] = useState(false);
 

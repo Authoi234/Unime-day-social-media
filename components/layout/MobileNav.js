@@ -30,6 +30,9 @@ export default function MobileNav() {
         border-t border-white/10
         bg-black/40
         backdrop-blur-xl
+        rounded-full
+        mx-5
+        mb-3
         md:hidden
         z-50
       "
