@@ -22,9 +22,7 @@ export default function MobileNav() {
 
   return (
     <motion.nav
-      initial={{ y: 100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.4 }}
+      whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
       className="
         fixed bottom-0 left-0 right-0
         border-t border-white/10

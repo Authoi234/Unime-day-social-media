@@ -1,5 +1,5 @@
 "use client";
-
+import "../../app/globals.css";
 import Link from "next/link";
 import { Home, Compass, User, Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -55,6 +55,7 @@ function NavItem({ href, icon, label, active }) {
     <Link
       href={href}
       className={`
+        special-liquid-glass
         flex items-center gap-3 px-4 py-3 rounded-xl
         transition-all duration-200
         ${active 
